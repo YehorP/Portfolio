@@ -1,0 +1,12 @@
+username: tsest ,score: 5 ,time: 00:00:35
+username: aaa ,score: 5 ,time: 00:00:29
+username: aaaa ,score: 16 ,time: 00:01:22
+username: check ,score: 4 ,time: 00:00:26
+username: ййй ,score: 7 ,time: 00:00:38
+username: ффф ,score: 0 ,time: 00:00:11
+username: фффф ,score: 3 ,time: 00:00:16
+username: sesh ,score: 0 ,time: 00:00:11
+username: check ,score: 0 ,time: 00:00:06
+username: john ,score: 5 ,time: 00:00:28
+username: tet3 ,score: 4 ,time: 00:00:25
+username: test4 ,score: 5 ,time: 00:00:37

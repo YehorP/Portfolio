@@ -1,0 +1,63 @@
+html{
+background-color: #e5e229;
+}
+body{
+border-radius: 15px;
+padding-bottom: 30px;
+}
+
+.quest{
+    margin-top: 20px !important;
+}
+.margins{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.question-img{
+    margin-top: 5px;
+    border: 1px solid black;
+    height: 65%;
+    width: 85%;
+}
+.userAnswers,.rightAnswers{
+    display: none;
+}
+.borders{
+    border-radius: 0px !important;
+}
+.userInput{
+    width: 40% !important;
+}
+.test2{
+    display: none;
+}
+.test{
+    
+    margin-top:10vh;
+}
+.rules{
+     margin-top:15vh;
+}
+.rules ul{
+    padding-left: 0px;
+}
+.hider{
+    display: none;
+}
+.iq{
+    font-size: 4;
+}
+.submit{
+  width:30% !important; 
+   
+}
+@media screen and (max-width:1024px){
+.submit{
+  width:30% !important; 
+   
+}
+.margins{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+}

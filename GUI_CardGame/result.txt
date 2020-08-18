@@ -1,0 +1,7 @@
+player name: 123  size: 2x2 time: 00:00:03
+player name: abx]c  size: 2x2 time: 00:00:10
+player name: 122  size: 2x2 time: 00:00:06
+player name: фффф  size: 2x2 time: 00:00:06
+player name: abc  size: 2x2 time: 00:00:12
+player name: abc  size: 2x2 time: 00:00:12
+player name: abc  size: 4x4 time: 00:00:57

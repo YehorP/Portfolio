@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="975c9290-5113-4aa6-97da-b306b6f77e28" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cK4WXRaPEzQmCbyElZrswvKrhT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="BruteForce" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="975c9290-5113-4aa6-97da-b306b6f77e28" name="Default Changelist" comment="" />
+      <created>1590263982744</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590263982744</updated>
+      <workItem from="1590263991671" duration="10717000" />
+      <workItem from="1590312975332" duration="8919000" />
+      <workItem from="1590335576669" duration="2933000" />
+      <workItem from="1590609863542" duration="1515000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1590274639871">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590274639871" />
+    <state width="1322" height="214" key="GridCell.Tab.0.bottom" timestamp="1590611263878">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590611263878" />
+    <state width="1322" height="214" key="GridCell.Tab.0.center" timestamp="1590611263877">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590611263877" />
+    <state width="1322" height="214" key="GridCell.Tab.0.left" timestamp="1590611263877">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590611263877" />
+    <state width="1322" height="214" key="GridCell.Tab.0.right" timestamp="1590611263877">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590611263877" />
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1590274763314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590274763314" />
+    <state width="1322" height="217" key="GridCell.Tab.1.center" timestamp="1590274763314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590274763314" />
+    <state width="1322" height="217" key="GridCell.Tab.1.left" timestamp="1590274763314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590274763314" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right" timestamp="1590274763314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590274763314" />
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1590610226104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590610226104" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BruteForce$Main.ic" NAME="Main Coverage Results" MODIFIED="1590271894835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

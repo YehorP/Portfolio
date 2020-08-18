@@ -1,0 +1,308 @@
+/* differnt fixes
+1-Float(fix)
+2-sticky footer(from .page-wrap to .page-wrap:after)
+3- for responsive (*)
+ */
+
+ /* fonts 
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+ /* fonts */
+ /* differnt fixes*/
+
+ * {
+    box-sizing: border-box;
+  
+}
+h3,h4{
+    font-weight:none;
+}
+    .clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+    .page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -65px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+/* differnt fixes*/
+
+.wrap{
+    overflow-x: hidden;
+}
+
+.borders{
+    border-radius: 0 !important;
+}
+
+
+
+
+
+/* header */
+
+.main-header {
+    padding-top: 0px;
+   
+    background: orange;
+    margin-bottom: 30px;
+     background: url('../images/Vegetable-Photo.jpg') ;
+     background-size: cover;
+     
+    
+}
+
+.nav-color{
+    background-color: orange;
+    border-radius: 0px !important;
+     border: none !important;
+     font-size: 1.1em !important;
+}
+.nav-color a{color: black !important;}
+.burger{
+    padding: 10px 15px 15px 15px !important;
+}
+.hidden-content{
+    display: none;
+}
+.first-info{
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.6em;
+    color:black;}
+
+
+/* Change the link color to #111 (black) on hover */
+
+.name  a {
+    text-decoration: none;
+    color: black;
+   }
+
+.name a:hover{
+    text-decoration: none;
+    color: black;
+}
+.name{
+    
+    margin: 0 auto;
+    width: 230px;
+    background-color: white;
+    text-align: center;
+}
+.main-link{
+      padding-top: 13em;
+    padding-bottom: 10em;
+}
+
+	
+/* header */
+.main-header{
+    margin: 0;
+}
+
+/* content */
+    body {
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+   
+}
+.sections{
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
+.bg-1{
+    margin-top: 2em;
+}
+.bg-3{
+    margin-bottom: 3em;
+}
+.bg-2{
+ margin-bottom: 2em;   
+}
+.foodingredients{
+    color: black;
+    text-align: center;
+    list-style: none;
+    background-color: white;
+     padding-left: 0px !important;
+}
+.boarders{
+    border-radius: 0px !important;
+}
+.food-photo{
+margin-bottom: 1em;  
+}
+.backgrounds{
+    background-color: orange !important;
+    outline: none !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+/**:before{
+    display: table;
+    content: '';
+}
+after{
+    box-sizing: border-box;
+    border: 0;
+}**/
+
+
+/* intro */
+.intro{
+ 
+    text-align: center;
+   padding-top: 1em;
+   padding-bottom: 1em;
+    background-color: orange;
+    margin: 0;
+    color: white;
+  font-family: 'Rubik', sans-serif;
+}
+.intro h3{
+    margin: 0px;
+    font-weight: 200;
+}
+/*intro */
+/* converter*/
+.calc-block{
+
+padding: 50px 40%;
+}
+.calc{
+    outline: 0px !important;
+     background-color: orange;
+}
+
+
+.icon-block{
+padding-bottom: 18px;
+}
+/* reciepes */
+/* content */
+
+
+
+    /* footer */
+    .page-wrap:after{
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+    background: #d9e4ea;
+    height: 65px;
+		
+    }
+.footer{
+	
+    bottom: 0;
+    width: 100%;
+      overflow-x: hidden !important;
+    background-color:lightgrey;
+	padding-top: 1.5em;
+}
+.footer span{
+	margin: 20px 0;
+}
+   /* footer */
+
+   /* responsive */
+   @media screen and (min-width: 750px) {
+    .hidden-content{
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
+}
+
+   @media screen and (min-width: 1024px) {
+   
+.name-block{
+      padding-top: 13em;
+    padding-bottom: 10em;
+}
+	   .name  a {
+    text-decoration: none;
+    color: black;
+   }
+
+.name a:hover{
+    text-decoration: none;
+    color: black;
+}
+	   li a:hover {
+    text-decoration: none;
+    color: black;
+    background-color:wheat;
+}
+li a:visited{
+    text-decoration: none;
+    color: black;
+}
+	   .wrap{
+padding-left: 2em;
+padding-right: 2em;
+}
+
+	}
+
+
+@media screen and (width: 320px) {
+	
+	 li a:hover {
+    text-decoration: none;
+    color: black;
+    background-color:wheat;
+}
+	li a:visited{
+    text-decoration: none;
+    color: black;
+}
+	
+	
+	}
+@media screen and (max-width: 450px){
+	.name a{
+		font-size: 0.8em;
+	}
+    
+
+@media screen and (width: 414px) {
+    
+}
+@media screen and (width: 360px) {
+.name a{
+		font-size: 0.65em;
+        }
+    
+.name a{
+		font-size: 0.75em;
+	}}
+@media screen and (width: 375px) {
+.name a{
+		font-size: 0.75em;
+	}
+  }
+}
+@media screen and (max-width:1024px){
+.calc-block{
+
+padding: 50px 20%;
+}
+}
+
