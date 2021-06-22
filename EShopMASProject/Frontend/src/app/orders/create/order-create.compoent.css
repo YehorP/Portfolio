@@ -1,0 +1,12 @@
+.form-container {
+    margin-left: 3rem;
+    width: 40%;
+}
+
+.warning-control {
+    border: 1px solid red;
+}
+
+.warning-text {
+    color: red;
+}

@@ -1,0 +1,53 @@
+<div class="container mt-3 mb-3">
+    <h4 class="mb-3">Orders history</h4>
+    <div class="card" style="border-radius: 0px;" *ngFor="let order of orders">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+            <a class="btn" data-bs-toggle="collapse" href=".collapse{{order.orderId}}">Order &#8470;{{order.orderId}}</a>
+        </h5>
+      </div>
+  
+      <div class="collapse collapse{{order.orderId}}">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+                <h5>Recipient info</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Name: {{order.recipientName}}</li>
+                    <li class="list-group-item">Surname: {{order.recipientSurname}}</li>
+                    <li class="list-group-item">Email: {{order.recipientEmail}}</li>
+                    <li class="list-group-item">Phone number: {{order.recipientPhoneNumber}}</li>
+                    <li class="list-group-item">Delivery method: {{getDeliveryMethodName(order.deliveryType)}}</li>
+                    <li class="list-group-item">Delivery address: {{order.deliveryAddress}}</li>
+                    <li class="list-group-item">Payment method: {{getPaymentMethodName(order.paymentType)}}</li>
+                    <li class="list-group-item">Created at: {{getCreationDate(order.creationTime)}}</li>
+                    <li class="list-group-item">Fnished at: {{getFinishedDate(order.finishDate)}}</li>
+                    <li class="list-group-item">Realization state: {{getRealizationState(order.realizationState)}}</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <h5>Ordered products</h5>
+                <table class="table table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product name</th>
+                        <th scope="col">Product amount</th>
+                        <th scope="col">Price per one</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let orderProduct of order.products">
+                        <td>{{orderProduct.product.name}}</td>
+                        <td>{{orderProduct.amount}}</td>
+                        <td>{{orderProduct.product.pricePerOne}} PLN</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <h6>Total price: {{calculateTotalPrice(order)}} PLN</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

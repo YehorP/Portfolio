@@ -1,0 +1,36 @@
+<div class="form-box">
+    <form class="form-signin" #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputLogin" class="sr-only">Login</label>
+        <input 
+            [ngClass]="{'wrong': loginInput.touched && !loginInput.valid}"
+            #loginInput="ngModel"
+            name="loginInput"
+            [ngModel]
+            type="text" 
+            id="inputLogin" 
+            class="form-control mb-2" 
+            placeholder="Login"
+            minlength="5"
+            required
+            autofocus
+        >
+        <p *ngIf="loginInput.touched && !loginInput.valid" style="color: red;">login should be at least 5 characters</p>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+            [ngClass]="{'wrong': passwordInput.touched && !passwordInput.valid}"
+            #passwordInput="ngModel"
+            name="passwordInput"
+            [ngModel]
+            type="password" 
+            id="inputPassword" 
+            class="form-control mb-2" 
+            placeholder="Password" 
+            minlength="5"
+            required
+        >
+        <p *ngIf="passwordInput.touched && !passwordInput.valid" style="color: red;">password should be at least 5 characters</p>
+        <p *ngIf="failedToLogin" style="color: red;">Wrong credentials was passed</p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+</div>

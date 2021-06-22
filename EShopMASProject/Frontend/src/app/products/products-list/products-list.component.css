@@ -1,0 +1,20 @@
+.filters {
+    text-align: left;
+    background-color: rgba(0,0,0,.03);
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.125);
+}   
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.filter {
+    margin-right: 2rem;
+}

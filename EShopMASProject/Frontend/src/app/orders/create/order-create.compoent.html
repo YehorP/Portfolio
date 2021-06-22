@@ -1,0 +1,118 @@
+<div class="form-container ms-4 mt-3 mb-3">
+    <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Recipient name</label>
+            <input 
+                [ngClass]="{'warning-control': showWarningStyles('recipientName')}" 
+                type="text" 
+                formControlName="recipientName" 
+                class="form-control" 
+                id="name">
+            <div *ngIf="showWarningStyles('recipientName')" id="nameHelp" class="form-text warning-text">Recipient name is required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="surname" class="form-label">Recipient surname</label>
+            <input 
+                [ngClass]="{'warning-control': showWarningStyles('recipientSurname')}"  
+                type="text" 
+                formControlName="recipientSurname" 
+                class="form-control" 
+                id="surname"
+            >
+            <div *ngIf="showWarningStyles('recipientSurname')" id="surnameHelp" class="form-text warning-text">Recipient surname is required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Recipient email address</label>
+            <input 
+                [ngClass]="{'warning-control': showWarningStyles('recipientEmail')}" 
+                type="email" 
+                formControlName="recipientEmail" 
+                class="form-control" 
+                id="email"
+            >
+            <div *ngIf="showWarningStyles('recipientEmail')" id="emailHelp" class="form-text warning-text">Recipient email is required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Recipient phone number</label>
+            <input 
+                [ngClass]="{'warning-control': showWarningStyles('recipientPhoneNumber')}" 
+                type="text"  
+                formControlName="recipientPhoneNumber" 
+                class="form-control" 
+                id="phone"
+            >
+            <div *ngIf="showWarningStyles('recipientPhoneNumber')" id="phoneHelp" class="form-text warning-text">Recipient phone number is required and shold be less that 15 characters</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="deliveryType" class="form-label">Delivery method</label>
+            <select [ngClass]="{'warning-control': showWarningStyles('deliveryType')}" (ngModelChange)="onDeliveryTypeSelect($event)" formControlName="deliveryType" class="form-control" id="deliveryType">
+                <option [ngValue]="0">Courier</option>
+                <option [ngValue]="1">From shop</option>
+                <option [ngValue]="2">Polish post</option>
+                <option [ngValue]="3">DHL</option>
+            </select>
+            <div *ngIf="showWarningStyles('deliveryType')" id="deliveryTypeHelp" class="form-text warning-text">Delivery method is required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="address" class="form-label">Delivery address</label>
+            <input 
+                [ngClass]="{'warning-control': showWarningStyles('recipientAddress')}"
+                *ngIf="orderForm.get('deliveryType').value == 0 || orderForm.get('deliveryType').value == 3" 
+                type="text" 
+                formControlName="recipientAddress" 
+                class="form-control" 
+                id="address"
+            >
+
+            <select 
+                [ngClass]="{'warning-control': showWarningStyles('recipientAddress')}" 
+                *ngIf="orderForm.get('deliveryType').value == 1" 
+                formControlName="recipientAddress" 
+                class="form-control" 
+                id="address"
+            >
+                <option [ngValue]="'Shop address 1'">Shop address 1</option>
+                <option [ngValue]="'Shop address 2'">Shop address 2</option>
+                <option [ngValue]="'Shop address 3'">Shop address 3</option>
+            </select>
+
+            <select 
+                [ngClass]="{'warning-control': showWarningStyles('recipientAddress')}" 
+                *ngIf="orderForm.get('deliveryType').value == 2" 
+                formControlName="recipientAddress" 
+                class="form-control" 
+                id="address"
+            >
+                <option [ngValue]="'Post address 1'">Post address 1</option>
+                <option [ngValue]="'Post address 2'">Post address 2</option>
+                <option [ngValue]="'Post address 3'">Post address 3</option>
+            </select>
+            <div *ngIf="showWarningStyles('recipientAddress')" id="addressHelp" class="form-text warning-text">Delivery address is required</div>
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="paymentMethod" class="form-label">Payment method</label>
+            <select [ngClass]="{'warning-control': showWarningStyles('paymentType') }" formControlName="paymentType" class="form-control" id="paymentType">
+                <option [ngValue]="0" *ngIf="orderForm.get('deliveryType').value != 1">Courier</option>
+                <option [ngValue]="1" *ngIf="orderForm.get('deliveryType').value == 1">InShop</option>
+                <option [ngValue]="2" *ngIf="orderForm.get('deliveryType').value != 1 && orderForm.get('deliveryType').value != 0">Post</option>
+                <option [ngValue]="3">Online payment</option>
+            </select>
+            <div *ngIf="showWarningStyles('paymentType')" id="paymentTypeHelp" class="form-text warning-text">Payment method is required</div>
+        </div>
+        
+        <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> 
+        create selects
+        -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

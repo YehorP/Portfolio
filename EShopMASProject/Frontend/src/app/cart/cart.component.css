@@ -1,0 +1,27 @@
+.cart-window {
+  padding: 3rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.product-text {
+    text-align: left;
+}
+
+.buttons-block {
+    text-align: right;
+}
+
+.product-span {
+    margin-left: 1.2rem;
+}
+
+.delete-icon {
+    float: right;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}

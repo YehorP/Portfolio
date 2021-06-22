@@ -1,0 +1,42 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 mb-5">
+           <div class="filters p-2">
+               <span class="filter unselectable"  (click)="changeFiltering()">
+                <i class="bi bi-arrow-down" *ngIf="enablePriceSorting"
+                [ngClass]="fromSmallerPrice ? 'bi-arrow-down' : 'bi-arrow-up'"
+                ></i>
+                   Price
+               </span>
+               <!-- <span class="filter">
+                   Filter2
+               </span>
+               <span class="filter">
+                    Filter3
+                </span> -->
+                <span>
+                    Search: 
+                    <input type="text" style="width: 300px;" (input)="onSearch($event)">
+                </span>
+           </div>
+        </div>
+        <div class="col-3 mb-5" *ngFor="let product of productsToShow">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="my-0 font-weight-normal">{{product.name}}</h5>
+                </div>
+                <img style="height: 250px;" src="{{product.image}}" class="card-img-top" alt="...">
+                <div class="card-body card-body">
+                  <p class="card-text">{{product.description}}</p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">Producer: {{product.producer}}</li>
+                    <li class="list-group-item">Price: {{product.pricePerOne}} PLN</li>
+                </ul>
+                <div class="card-body">
+                    <a (click)="addToCart(product)" class="btn btn-primary w-100">To cart</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

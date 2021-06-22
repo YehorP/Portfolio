@@ -1,0 +1,9 @@
+<div *ngIf="(isOnlinePayment && isFailedPayment) || !isOnlinePayment"class="info-window">
+    <h5>Thank you for your order. Your order id is {{orderId}}</h5>
+    <a routerLink="/" class="btn btn-primary mt-2">To main page</a>
+</div>
+
+<div *ngIf="isOnlinePayment && !isFailedPayment"class="info-window">
+    <h5>Online payment failed </h5>
+    <a routerLink="/" class="btn btn-primary mt-2">To main page</a>
+</div>

@@ -1,0 +1,27 @@
+<div class="cart-window" *ngIf="shoppingCart; else elseTemplate">
+    <h5>Cart</h5>
+    <ul class="list-group mb-5">
+        <li class="list-group-item p-2 product-text" *ngFor="let product of shoppingCart; let i = index">
+            <span class="product-span">Product: {{product.name}}</span> 
+            <span class="product-span"> Amount: 
+                <input (ngModelChange)="productAmountChange($event)" style="width: 8%; border:1px solid rgba(0,0,0,.125);" [min]="1" name="amount-input-{{i}}" [(ngModel)]="product.amount" type="number"/></span> 
+            <span class="product-span"> Price per one: {{product.pricePerOne}}</span>
+            <i (click)="deleteProduct(product)"class="bi bi-bag-x delete-icon"></i>
+        </li>
+    </ul>
+    <span>
+        Total price: {{calcTotalPrice()}} PLN
+    </span>
+    <hr>
+
+    <div class="buttons-block">
+        <a class="btn btn-primary" (click)="order()">To Order</a>
+    </div>
+   
+</div>
+
+<ng-template #elseTemplate>
+    <div class="cart-window">
+        <h5>Cart is empty</h5>
+    </div>
+</ng-template>
